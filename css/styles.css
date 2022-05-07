@@ -1,0 +1,251 @@
+:root {
+    /*font*/
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /*text-colors*/
+    --secondary-txt-cl: #212121;
+    --main-txt-cl: #757575;
+    --accent-txt-cl: #FFFF;
+    --logo-cl: #000000;
+    --accent-cl: #2196F3;
+    --transparent-cl:rgba(255, 255, 255, 0.6);
+
+    /*background-colors*/
+    --main-bg-cl: #FFFFFF;
+    --secondary-bg-cl: #F5F4FA;
+    --dark-bg-cl: #2F303A;
+    --btn-bg: #188CE8;
+
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+.list {
+    list-style: none;
+}
+    /*logo*/
+.accent {
+    color: var(--accent-cl);
+}
+/*
+============================
+| Header section
+============================
+*/
+
+/*Logo*/
+
+.header .logo,.footer .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--logo-cl);
+}
+
+    /*Navigation*/
+
+.nav .link{
+    color: var(--secondary-txt-cl);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+}
+.contact .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav .link:hover,
+.nav .link:focus,
+.contact .link:hover,
+.contact .link:focus
+ {
+color: var(--accent-cl);
+}
+
+.nav .link:current,
+.contact .link:current {
+    color: var(--accent-cl);
+}
+/*
+============================
+| Hero section
+============================
+*/
+.hero {
+    background-color: var(--dark-bg-cl);
+    }
+
+.hero .title { 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+    text-align: center;
+    color: var(--accent-txt-cl);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.btn {
+font-family: inherit;
+text-align: center;
+align-items: center;
+cursor: pointer;
+color: var(--secondary-txt-cl);
+}
+.hero .btn {
+background-color: var(--accent-cl);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+color: var(--accent-txt-cl);
+}
+
+.filter .btn {
+background-color: var(--secondary-bg-cl);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+
+}
+
+
+.filter .btn:hover,
+.filter .btn:focus {
+    color: var(--accent-txt-cl);
+    background-color: var(--accent-cl);
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+    color: var(--accent-txt-cl);
+    background-color: var(--btn-bg);
+}
+
+/*
+============================
+| Feature section
+============================
+*/
+.feature .title {
+color: var(--secondary-txt-cl);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+}
+/*
+============================
+| Gallery work section
+============================
+*/
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-txt-cl);
+}
+/*
+============================
+| Team section
+============================
+*/
+.team {
+background-color: var(--secondary-bg-cl);
+}
+
+.team .title {
+color: var(--secondary-txt-cl);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+
+}
+.team .text {
+font-size: 16px;
+line-height: 1.19;
+}
+/*
+============================
+| Portfolio page
+============================
+*/
+/*Ourwork*/
+.works {
+    background-color: var(--secondary-bg-cl);
+}
+
+.works .title {
+    color: var(--secondary-txt-cl);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.works .text {
+    font-size: 16px;
+    line-height:1.88;
+}
+/*
+============================
+| Footer section
+============================
+*/
+.footer{
+    background-color: var(--dark-bg-cl);
+    color: var(--accent-txt-cl);
+}
+.footer .logo {
+color: var(--accent-txt-cl);
+}
+.logoaccent{
+color: var(--accent-cl)
+}
+.footer .link {
+color: var(--transparent-cl);
+}
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-cl);}
+
