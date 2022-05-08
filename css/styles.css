@@ -16,6 +16,7 @@
     --secondary-bg-cl: #F5F4FA;
     --dark-bg-cl: #2F303A;
     --btn-bg: #188CE8;
+    --grey-bg-cl: #E5E5E5;
 
 }
 
@@ -39,12 +40,34 @@ body {
     margin: -1px;
 }
 
+.container {
+    outline: 1px solid red;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+img{
+    display: block;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
 .link {
     text-decoration: none;
     color: currentColor;
 }
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
     /*logo*/
 .accent {
@@ -58,6 +81,11 @@ body {
 
 /*Logo*/
 
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
 .header .logo,.footer .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -65,21 +93,58 @@ body {
     text-decoration: none;
     color: var(--logo-cl);
 }
+.header .logo {
+    margin-right: 93px;
+}
 
     /*Navigation*/
 
-.nav .link{
+.nav .list{
+    display: flex;
+    align-items: center;
+}
+
+.nav .item{
+    margin-right: 50px;
+
     color: var(--secondary-txt-cl);
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
 }
-.contact .link {
+
+.nav .item:last-child {
+    margin-right: 0;
+}
+
+.nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header .contact {
+    margin-left: auto;   
+}
+
+.contact .list{
+    display: flex;
+    align-items: center;
+}
+
+.contact .item{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+.contact .item:first-child {
+    margin-right: 50px;
 }
 
 .nav .link:hover,
@@ -101,9 +166,18 @@ color: var(--accent-cl);
 */
 .hero {
     background-color: var(--dark-bg-cl);
-    }
+    width: ;
+    height: 600px;
+}
 
 .hero .title { 
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1,36;
@@ -120,12 +194,20 @@ cursor: pointer;
 color: var(--secondary-txt-cl);
 }
 .hero .btn {
+display: block;
+margin-top: 0;
+margin-right: auto;
+margin-left: auto;
+padding: 10px 32px;
+
 background-color: var(--accent-cl);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
 color: var(--accent-txt-cl);
+border: 1px solid var(--btn-bg);
+border-radius: 4px;
 }
 
 .filter .btn {
@@ -166,6 +248,19 @@ color: #212121;
 | Feature section
 ============================
 */
+.feature, .list{
+    display: flex;
+}
+
+.feature .item {
+    margin-right: 30px;
+
+}
+
+.feature .item:last-child {
+    margin-right: 0;
+
+}
 .feature .title {
 color: var(--secondary-txt-cl);
 font-weight: 700;
@@ -173,18 +268,29 @@ font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 }
+
 /*
 ============================
 | Gallery work section
 ============================
 */
 .section-title {
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     color: var(--secondary-txt-cl);
 }
+
+.gallery .item {
+    margin-right: 30px;
+}
+
+.gallery .item:last-child {
+    margin-right: 0;
+}
+
 /*
 ============================
 | Team section
@@ -194,7 +300,20 @@ text-transform: uppercase;
 background-color: var(--secondary-bg-cl);
 }
 
+.team img{
+    padding-bottom: 30px;
+}
+
+.team .item {
+margin-right: 30px;
+}
+
+.team .item:last-child {
+    margin-right: 0;
+}
+
 .team .title {
+padding-bottom: 10px;
 color: var(--secondary-txt-cl);
 font-weight: 500;
 font-size: 16px;
@@ -202,6 +321,9 @@ line-height: 1.19;
 
 }
 .team .text {
+margin-top: 0;
+padding-bottom: 30px;
+
 font-size: 16px;
 line-height: 1.19;
 }
@@ -210,9 +332,30 @@ line-height: 1.19;
 | Portfolio page
 ============================
 */
+/*Portfolio filter button*/
+
 /*Ourwork*/
+.filter{
+    list-style: none;
+    padding-bottom: 34px;
+    margin: 0;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.filter .btn {
+    padding: 6px 22px;
+    border: none;
+    margin-right: 8px;
+}
+
+.filter .btn:last-child {
+    margin-right: 0;}
+
 .works {
-    background-color: var(--secondary-bg-cl);
+    background-color: var(--grey-bg-cl);
 }
 
 .works .title {
@@ -235,6 +378,8 @@ line-height: 1.19;
 .footer{
     background-color: var(--dark-bg-cl);
     color: var(--accent-txt-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer .logo {
 color: var(--accent-txt-cl);
